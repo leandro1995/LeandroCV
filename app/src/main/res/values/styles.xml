@@ -8,4 +8,31 @@
         <item name="android:windowBackground">@color/black</item>
     </style>
 
+    <!-- Text -->
+    <style name="TitleText">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text20</item>
+    </style>
+
+    <style name="TermAndConditionText">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text15</item>
+    </style>
+
+    <style name="ActiveButton">
+        <item name="android:background">@drawable/brown_rounded</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text17</item>
+    </style>
+
+    <style name="DeactivatedButton">
+        <item name="android:background">@drawable/gray_rounded</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text17</item>
+    </style>
+
 </resources>
