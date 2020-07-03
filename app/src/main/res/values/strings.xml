@@ -9,4 +9,12 @@
     <string name="information">Información</string>
     <string name="article">Artículo</string>
     <string name="play_store">Play Store</string>
+    <string name="name_vidal_resume">Leandro castillo borja</string>
+    <string name="android_developer_vidal_resume">Android Developer</string>
+    <string name="location_vidal_resume">Perú, Callao-Bellavista</string>
+    <string name="description_vidal_resume">Con conocimientos de Android por 3 años usando java y kotlin control de firebase, manejo de git. Soy un chico que le gusta aprender todo lo referente al mundo móvil siempre actualizado para crear proyectos de calidad.
+Actualmente realizo freelance con mi compañera que es diseñadora realizamos desarrollo Android de una manera rápida y eficiente.</string>
+    <string name="tools">Herramientas:</string>
+    <string name="training">Formación:</string>
+    <string name="contact">Contactame si buscas realizar una App:</string>
 </resources>
