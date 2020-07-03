@@ -1,84 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/black"
     tools:context=".activity.TermAndConditionActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+    <data>
+
+        <variable
+            name="termAndConditionModel"
+            type="com.leandro1995.leandrocv.viewmodel.TermAndConditionViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            style="@style/TitleText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/dimen25"
-            android:gravity="center"
-            android:text="@string/term_Condition" />
-
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="@dimen/dimen0"
-        android:layout_height="@dimen/dimen0"
-        android:layout_marginStart="@dimen/dimen20"
-        android:layout_marginTop="@dimen/dimen20"
-        android:layout_marginEnd="@dimen/dimen20"
-        android:layout_marginBottom="@dimen/dimen16"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        android:layout_height="match_parent"
+        android:background="@color/black">
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                style="@style/TermAndConditionText"
-                android:layout_width="match_parent"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/term_condition_description" />
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen25"
+                android:gravity="center"
+                android:text="@string/term_Condition" />
 
         </LinearLayout>
 
-    </ScrollView>
+        <ScrollView
+            android:layout_width="@dimen/dimen0"
+            android:layout_height="@dimen/dimen0"
+            android:layout_marginStart="@dimen/dimen20"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/dimen20"
+            android:layout_marginBottom="@dimen/dimen16"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="@dimen/dimen0"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <CheckBox
-            style="@style/TermAndConditionText"
-            android:layout_width="wrap_content"
+                <TextView
+                    style="@style/TermAndConditionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/term_condition_description" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="@dimen/dimen0"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/gray"
-            android:text="@string/accept_terms_conditions" />
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            style="@style/DeactivatedButton"
-            android:layout_width="@dimen/dimen120"
-            android:layout_height="@dimen/dimen35"
-            android:layout_marginTop="@dimen/dimen15"
-            android:layout_marginBottom="@dimen/dimen20"
-            android:text="@string/see_cv" />
+            <CheckBox
+                android:id="@+id/termAndConditionCheck"
+                style="@style/TermAndConditionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray"
+                android:text="@string/accept_terms_conditions" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/acceptButton"
+                style="@style/DeactivatedButton"
+                android:layout_width="@dimen/dimen120"
+                android:layout_height="@dimen/dimen35"
+                android:layout_marginTop="@dimen/dimen15"
+                android:layout_marginBottom="@dimen/dimen20"
+                android:onClick="@{()-> termAndConditionModel.acceptOnclick()}"
+                android:text="@string/see_cv" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
