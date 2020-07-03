@@ -7,4 +7,11 @@
     <!-- Black -->
     <color name="black">#040404</color>
 
+    <!-- Gray -->
+    <color name="gray">#D5D5D5</color>
+    <color name="gray10">#998F89</color>
+
+    <!-- Brown -->
+    <color name="brown">#54342A</color>
+
 </resources>
