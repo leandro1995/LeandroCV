@@ -3,6 +3,7 @@ package com.leandro1995.leandrocv.config
 import com.leandro1995.leandrocv.R
 import com.leandro1995.leandrocv.model.Article
 import com.leandro1995.leandrocv.model.Contact
+import com.leandro1995.leandrocv.model.PlayStore
 import com.leandro1995.leandrocv.model.Tool
 
 class Setting {
@@ -10,6 +11,9 @@ class Setting {
         const val SPLASH_TIME = 2L
         const val IMAGE_PROFILE =
             "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR2XJgqc-QlIjQRP87euArBclAw4f3xc3rSlg&usqp=CAU"
+        const val EMAIL = "leccbo1995@gmail.com"
+        const val SUBJECT = "Solicitud de aplicativo móvil"
+        const val CALL_PHONE = 100
         val TOOL_LIST = mutableListOf(
             Tool(
                 image = R.drawable.android_studio_img,
@@ -24,7 +28,6 @@ class Setting {
             Tool(image = R.drawable.git_img, name = "Git", url = "https://git-scm.com/"),
             Tool(image = R.drawable.buddy_img, name = "Buddy Works", url = "https://buddy.works/")
         )
-
         val CONTACT_LIST = mutableListOf(
             Contact(image = R.drawable.gmail_img, name = "Gmail"),
             Contact(
@@ -34,11 +37,6 @@ class Setting {
             ),
             Contact(image = R.drawable.call_img, name = "Telefono", phone = 988252046)
         )
-
-        const val EMAIL = "leccbo1995@gmail.com"
-        const val SUBJECT = "Solicitud de aplicativo móvil"
-        const val CALL_PHONE = 100
-
         val ARTICLE_lIST = mutableListOf(
             Article(
                 image = R.drawable.git_hub_img,
@@ -54,6 +52,28 @@ class Setting {
                 image = R.drawable.facebook_img,
                 name = "Levid",
                 url = "https://www.facebook.com/Levid-103326791416714"
+            )
+        )
+        val PLAY_STORE_LIST = mutableListOf(
+            PlayStore(
+                name = "Core",
+                url = "https://play.google.com/store/apps/details?id=me.doapps.core"
+            ),
+            PlayStore(
+                name = "CIC Agro - Cacao",
+                url = "https://play.google.com/store/apps/details?id=pe.cic.agro.com&hl=es"
+            ),
+            PlayStore(
+                name = "BLP FACTORING",
+                url = "https://play.google.com/store/apps/details?id=com.blp.factoring&hl=es"
+            ),
+            PlayStore(
+                name = "SMV",
+                url = "https://play.google.com/store/apps/details?id=pe.gob.smv.smv&hl=es"
+            ),
+            PlayStore(
+                name = "IGV PERU",
+                url = "https://play.google.com/store/apps/details?id=me.doapps.igvperu&hl=es"
             )
         )
     }

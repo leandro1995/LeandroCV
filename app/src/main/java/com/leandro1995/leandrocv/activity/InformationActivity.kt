@@ -30,7 +30,8 @@ class InformationActivity : AppCompatActivity() {
 
     private fun view() {
         //informationViewModel.vidalResumeSelect()
-        informationViewModel.articleSelect()
+        //informationViewModel.articleSelect()
+        informationViewModel.playStoreSelect()
     }
 
     private fun observer() {

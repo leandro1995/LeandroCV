@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.leandro1995.leandrocv.fragment.ArticleFragment
+import com.leandro1995.leandrocv.fragment.PlayStoreFragment
 import com.leandro1995.leandrocv.fragment.VidalResumeFragment
 
 class InformationViewModel : ViewModel() {
@@ -18,6 +19,7 @@ class InformationViewModel : ViewModel() {
 
     private val vidalResumeFragment = VidalResumeFragment()
     private val articleFragment = ArticleFragment()
+    private val playStoreFragment = PlayStoreFragment()
 
     fun shareSheetOnclick() {
         shareSheetMutable.value = "LEANDRO"
@@ -29,5 +31,9 @@ class InformationViewModel : ViewModel() {
 
     fun articleSelect() {
         fragmentSelectMutable.value = articleFragment
+    }
+
+    fun playStoreSelect() {
+        fragmentSelectMutable.value = playStoreFragment
     }
 }
