@@ -1,6 +1,7 @@
 package com.leandro1995.leandrocv.config
 
 import com.leandro1995.leandrocv.R
+import com.leandro1995.leandrocv.model.Article
 import com.leandro1995.leandrocv.model.Contact
 import com.leandro1995.leandrocv.model.Tool
 
@@ -37,5 +38,23 @@ class Setting {
         const val EMAIL = "leccbo1995@gmail.com"
         const val SUBJECT = "Solicitud de aplicativo móvil"
         const val CALL_PHONE = 100
+
+        val ARTICLE_lIST = mutableListOf(
+            Article(
+                image = R.drawable.git_hub_img,
+                name = "GitHub",
+                url = "https://github.com/leandro1995"
+            ),
+            Article(
+                image = R.drawable.medium_img,
+                name = "Medium",
+                url = "https://medium.com/@leccbo1995"
+            ),
+            Article(
+                image = R.drawable.facebook_img,
+                name = "Levid",
+                url = "https://www.facebook.com/Levid-103326791416714"
+            )
+        )
     }
 }
