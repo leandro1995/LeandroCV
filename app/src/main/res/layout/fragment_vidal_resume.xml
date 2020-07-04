@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.VidalResumeFragment">
+
+    <data>
+
+        <variable
+            name="vidalResumeModel"
+            type="com.leandro1995.leandrocv.viewmodel.VidalResumeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="@dimen/dimen0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen15"
+            android:layout_marginEnd="@dimen/dimen15"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/imageView"
+                    android:layout_width="@dimen/dimen100"
+                    android:layout_height="@dimen/dimen100"
+                    app:roundedCornerRadius="@dimen/dimen10"
+                    fresco:roundBottomLeft="true"
+                    fresco:roundBottomRight="true"
+                    fresco:roundTopLeft="true"
+                    fresco:roundTopRight="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.8"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TitleVidalResumeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_vidal_resume" />
+
+                <TextView
+                    style="@style/SubTitleVidalResumeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen10"
+                    android:text="@string/android_developer_vidal_resume" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen5"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen13"
+                        android:layout_height="@dimen/dimen13"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_location"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        style="@style/LocationTitleVidalResumeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen5"
+                        android:text="@string/location_vidal_resume" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="@dimen/dimen0"
+            android:layout_height="@dimen/dimen0"
+            android:layout_marginStart="@dimen/dimen15"
+            android:layout_marginEnd="@dimen/dimen15"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SubTitleVidalResumeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen30"
+                    android:layout_marginEnd="@dimen/dimen10"
+                    android:text="@string/description_vidal_resume" />
+
+                <TextView
+                    style="@style/SubTitleVidalResumeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen15"
+                    android:layout_marginEnd="@dimen/dimen10"
+                    android:text="@string/tools" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/toolRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen15"
+                    android:overScrollMode="never" />
+
+                <TextView
+                    style="@style/SubTitleVidalResumeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen15"
+                    android:layout_marginEnd="@dimen/dimen10"
+                    android:text="@string/training" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10"
+                        android:layout_marginTop="@dimen/dimen10"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen20"
+                            android:layout_height="@dimen/dimen20"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_institute"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            style="@style/SubTitleVidalResumeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dimen5"
+                            android:text="@string/institute" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/SubTitleVidalResumeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:layout_marginEnd="@dimen/dimen10"
+                        android:text="@string/start_institute" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10"
+                        android:layout_marginTop="@dimen/dimen10"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen20"
+                            android:layout_height="@dimen/dimen20"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_job"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            style="@style/SubTitleVidalResumeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dimen5"
+                            android:text="@string/job" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/SubTitleVidalResumeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:layout_marginEnd="@dimen/dimen10"
+                        android:text="@string/start_job" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/SubTitleVidalResumeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen15"
+                    android:layout_marginEnd="@dimen/dimen10"
+                    android:text="@string/contact" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/contactRecycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen15"
+                    android:layout_marginBottom="@dimen/dimen15" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

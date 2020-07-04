@@ -21,6 +21,31 @@
         <item name="android:textSize">@dimen/text15</item>
     </style>
 
+    <style name="TitleVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text15</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="SubTitleVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text13</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="LocationTitleVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text13</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="ItemToolVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text11</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!-- Component -->
     <style name="ActiveButton">
         <item name="android:background">@drawable/brown_rounded</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>

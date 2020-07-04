@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.leandro1995.leandrocv.R
@@ -24,6 +25,12 @@ class InformationActivity : AppCompatActivity() {
 
         informationActivity = DataBindingUtil.setContentView(this, R.layout.activity_information)
         informationActivity.informationModel = informationViewModel
+
+        view()
+    }
+
+    private fun view() {
+        informationViewModel.vidalResumeSelect()
     }
 
     private fun observer() {
@@ -34,6 +41,10 @@ class InformationActivity : AppCompatActivity() {
                     putExtra(Intent.EXTRA_TEXT, it)
                     type = "text/plain"
                 }, null))
+            })
+
+            fragmentSelectMutable.observe(this@InformationActivity, Observer {
+                supportFragmentManager.beginTransaction().replace(R.id.contentLinear, it).commit()
             })
         }
     }
