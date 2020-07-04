@@ -10,7 +10,7 @@ class Setting {
     companion object {
         const val SPLASH_TIME = 2L
         const val IMAGE_PROFILE =
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR2XJgqc-QlIjQRP87euArBclAw4f3xc3rSlg&usqp=CAU"
+            "https://i.pinimg.com/originals/91/b5/a2/91b5a23f4c4b3f70447ce075abc52f52.jpg"
         const val EMAIL = "leccbo1995@gmail.com"
         const val SUBJECT = "Solicitud de aplicativo móvil"
         const val CALL_PHONE = 100

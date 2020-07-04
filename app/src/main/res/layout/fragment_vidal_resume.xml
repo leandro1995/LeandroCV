@@ -32,14 +32,16 @@
             <LinearLayout
                 android:layout_width="@dimen/dimen0"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen10"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:gravity="left"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:id="@+id/imageView"
-                    android:layout_width="@dimen/dimen100"
-                    android:layout_height="@dimen/dimen100"
+                    android:layout_width="@dimen/dimen95"
+                    android:layout_height="@dimen/dimen120"
                     app:roundedCornerRadius="@dimen/dimen10"
                     fresco:roundBottomLeft="true"
                     fresco:roundBottomRight="true"
@@ -52,7 +54,7 @@
                 android:layout_width="@dimen/dimen0"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1.8"
+                android:layout_weight="1.5"
                 android:orientation="vertical">
 
                 <TextView
