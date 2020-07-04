@@ -16,7 +16,9 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
 
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,9 +26,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.InformationActivity" />
+        <activity
+            android:name=".activity.InformationActivity"
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".activity.TermAndConditionActivity" />
+        <activity
+            android:name=".activity.TermAndConditionActivity"
+            android:screenOrientation="portrait" />
 
     </application>
 
