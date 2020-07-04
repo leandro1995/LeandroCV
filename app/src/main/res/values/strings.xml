@@ -17,4 +17,8 @@ Actualmente realizo freelance con mi compañera que es diseñadora realizamos de
     <string name="tools">Herramientas:</string>
     <string name="training">Formación:</string>
     <string name="contact">Contactame si buscas realizar una App:</string>
+    <string name="institute">Instituto: Cibertec – Computación e informática (egresado)</string>
+    <string name="start_institute">Desde 2014 – Hasta 2017</string>
+    <string name="job">Trabajo: Doapps (Develop Android)</string>
+    <string name="start_job">Desde 2017 – Actualidad</string>
 </resources>

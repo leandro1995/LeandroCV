@@ -146,11 +146,80 @@
                     android:layout_marginEnd="@dimen/dimen10"
                     android:text="@string/training" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/trainingRecycler"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dimen15" />
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10"
+                        android:layout_marginTop="@dimen/dimen10"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen20"
+                            android:layout_height="@dimen/dimen20"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_institute"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            style="@style/SubTitleVidalResumeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dimen5"
+                            android:text="@string/institute" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/SubTitleVidalResumeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:layout_marginEnd="@dimen/dimen10"
+                        android:text="@string/start_institute" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10"
+                        android:layout_marginTop="@dimen/dimen10"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen20"
+                            android:layout_height="@dimen/dimen20"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_job"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            style="@style/SubTitleVidalResumeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dimen5"
+                            android:text="@string/job" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/SubTitleVidalResumeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:layout_marginEnd="@dimen/dimen10"
+                        android:text="@string/start_job" />
+
+                </LinearLayout>
 
                 <TextView
                     style="@style/SubTitleVidalResumeText"
