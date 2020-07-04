@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.leandro1995.leandrocv.R
@@ -30,7 +29,8 @@ class InformationActivity : AppCompatActivity() {
     }
 
     private fun view() {
-        informationViewModel.vidalResumeSelect()
+        //informationViewModel.vidalResumeSelect()
+        informationViewModel.articleSelect()
     }
 
     private fun observer() {
