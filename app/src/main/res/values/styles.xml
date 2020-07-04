@@ -39,6 +39,12 @@
         <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
+    <style name="ItemToolVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text11</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
     <!-- Component -->
     <style name="ActiveButton">
         <item name="android:background">@drawable/brown_rounded</item>
