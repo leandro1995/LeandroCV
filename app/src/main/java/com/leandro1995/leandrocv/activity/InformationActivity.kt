@@ -29,9 +29,14 @@ class InformationActivity : AppCompatActivity() {
     }
 
     private fun view() {
-        //informationViewModel.vidalResumeSelect()
-        //informationViewModel.articleSelect()
-        informationViewModel.playStoreSelect()
+        informationViewModel.vidalResumeSelect()
+
+        informationActivity.bottomNavigation.setOnNavigationItemSelectedListener {
+
+            informationViewModel.menuSelect(menuId = it.itemId)
+
+            return@setOnNavigationItemSelectedListener true
+        }
     }
 
     private fun observer() {
