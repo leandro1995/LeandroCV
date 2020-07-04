@@ -6,6 +6,7 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/contentLinear"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen80"
         android:layout_marginStart="@dimen/dimen16"
@@ -20,20 +21,21 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="@dimen/dimen40"
-            android:layout_height="@dimen/dimen40"
+            android:id="@+id/articleImage"
+            android:layout_width="@dimen/dimen50"
+            android:layout_height="@dimen/dimen50"
             android:layout_gravity="center"
             android:layout_marginStart="@dimen/dimen20"
-            app:srcCompat="@drawable/gmail_img"
+            android:adjustViewBounds="true"
             tools:ignore="ContentDescription" />
 
         <TextView
+            android:id="@+id/nameArticleText"
             style="@style/ItemArticleVidalResumeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="@dimen/dimen10"
-            android:text="TextView" />
+            android:layout_marginStart="@dimen/dimen10" />
 
     </LinearLayout>
 
