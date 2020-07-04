@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "996400768748",
+    "firebase_url": "https://leandrocv-edf88.firebaseio.com",
+    "project_id": "leandrocv-edf88",
+    "storage_bucket": "leandrocv-edf88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996400768748:android:bf1be0480a1235f7ea67c9",
+        "android_client_info": {
+          "package_name": "com.leandro1995.leandrocv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996400768748-sn5956nkhv42md88pfc4rlf1k4uqan8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPmMo96N5x7vpbXOQllEd-AhBw5tseLOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996400768748-sn5956nkhv42md88pfc4rlf1k4uqan8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

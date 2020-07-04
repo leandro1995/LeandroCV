@@ -5,6 +5,71 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <!-- Text -->
+    <style name="TitleText">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text20</item>
+    </style>
+
+    <style name="TermAndConditionText">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text15</item>
+    </style>
+
+    <style name="TitleVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text15</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="SubTitleVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text13</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="LocationTitleVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text13</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="ItemToolVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text11</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="ItemArticleVidalResumeText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text15</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="ItemPlayStoreText">
+        <item name="android:textColor">@color/gray20</item>
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!-- Component -->
+    <style name="ActiveButton">
+        <item name="android:background">@drawable/brown_rounded</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text17</item>
+    </style>
+
+    <style name="DeactivatedButton">
+        <item name="android:background">@drawable/gray_rounded</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text17</item>
     </style>
 
 </resources>
