@@ -1,6 +1,6 @@
 # LeandroCV
 
-![N|Solid](https://play.google.com/intl/es-419/badges/static/images/badges/es-419_badge_web_generic.png)](play store)
+[![N|Solid](https://play.google.com/intl/es-419/badges/static/images/badges/es-419_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.leandro1995.leandrocv)
 
 Esta aplicación es un CV (currículo Vidal) que muestra mis habilidades como developer Android que muestra mi información, experiencia los lugares donde subo mis artículos los proyectos que he realizado y son subidos al play store al final se consideraría una demo de las que voy a comenzar a realizar lo único malo que no pude conseguir buenas imágenes así que  verán algunas imágenes en buena calidad y otros en mala calidad muchas gracias por leer esta pequeña introducción y motivo por el cual se creó el proyecto.
 
