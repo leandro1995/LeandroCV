@@ -14,6 +14,8 @@ class Setting {
         const val EMAIL = "leccbo1995@gmail.com"
         const val SUBJECT = "Solicitud de aplicativo móvil"
         const val CALL_PHONE = 100
+        const val PLAY_STORE =
+            "https://play.google.com/store/apps/details?id=com.leandro1995.leandrocv"
         val TOOL_LIST = mutableListOf(
             Tool(
                 image = R.drawable.android_studio_img,

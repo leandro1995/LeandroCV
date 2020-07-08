@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.leandro1995.leandrocv.R
+import com.leandro1995.leandrocv.config.Setting
 import com.leandro1995.leandrocv.fragment.ArticleFragment
 import com.leandro1995.leandrocv.fragment.PlayStoreFragment
 import com.leandro1995.leandrocv.fragment.VidalResumeFragment
@@ -23,7 +24,7 @@ class InformationViewModel : ViewModel() {
     private val playStoreFragment = PlayStoreFragment()
 
     fun shareSheetOnclick() {
-        shareSheetMutable.value = "LEANDRO"
+        shareSheetMutable.value = Setting.PLAY_STORE
     }
 
     fun menuSelect(menuId: Int) {
